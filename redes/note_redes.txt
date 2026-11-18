@@ -1,0 +1,46 @@
+
+Administrativo – 5100 computadores
+
+2^12 - 2=4094
+2^13 - 2=8190
+
+Máscara: /19 (255.255.224.0)
+
+Rede:
+
+Rede: 172.80.0.0/19
+1º Host: 172.80.0.1
+Último Host: 172.80.31.254
+Broadcast: 172.80.31.255
+
+Vendas – 2400 computadores
+
+2^11 - 2=2046 
+2^12 - 2=4094 
+
+Máscara: /20 (255.255.240.0)
+
+rede:
+
+Rede: 172.80.32.0/20
+1º Host: 172.80.32.1
+Último Host: 172.80.47.254
+Broadcast: 172.80.47.255
+
+Marketing – 900 computadores
+
+2^9 - 2=510 
+2^10 - 2=1022 
+
+Máscara: /22 (255.255.252.0)
+
+rede:
+
+Rede: 172.80.48.0/22
+1º Host: 172.80.48.1
+Último Host: 172.80.51.254
+Broadcast: 172.80.51.255
+
+As máquinas da mesma sub-rede se comunicam diretamente através do switch utilizando seus endereços IP e MAC.
+
+Quando as máquinas pertencem a sub-redes diferentes, é necessário um dispositivo de camada 3 (roteador) para encaminhar os pacotes entre as redes. Se o gateway padrão estiver configurado corretamente e o roteador possuir interfaces em todas as sub-redes, a comunicação ocorrerá normalmente. Caso contrário, os pacotes não encontrarão caminho para a rede de destino e o ping falhará.
